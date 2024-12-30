@@ -1,0 +1,17 @@
+#captando do usuário a quantidade de notas totais
+num_notas = int(input("Digite o número de notas: "))
+
+#lista com as notas, inicia-se vazia
+notas = []
+
+cont = 1
+while cont <= num_notas:
+
+#captando do usuário uma nota
+  nota_atual = float(input("Digite sua nota: "))
+  notas.append(nota_atual)
+  cont += 1 
+
+#calcular a média atual
+media = sum(notas) / len(notas)
+print("\nA sua média é: ", media)
